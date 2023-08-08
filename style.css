@@ -27,6 +27,11 @@ header{
     display: flex;
     align-items: center;
     font-weight: 900;
+    cursor: pointer;
+}
+
+#cart:hover{
+    background-color: gray;
 }
 
 header img{
@@ -91,16 +96,21 @@ img[alt="book"]{
 }
 
 .kart{
-    font-size: 15px;
-    background-color: #6196ff;
+    font-size: 17px;
+    background-color: hsl(220, 100%, 60%);
     text-align: center;
-    height: 20px;
-    width: 50px;
+    height: 25px;
+    width: 70px;
     border-radius: 2px;
+    cursor: pointer;
+}
+
+.kart:hover{
+    background-color: hsl(220, 100%, 50%);
 }
 
 .kart img{
-    height: 10px;
+    height: 15px;
 }
 
 .price{
