@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    height: 100%;
+}
+
+.content{
+    padding: 50px;
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    row-gap: 100px;
+}
+
+header{
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cart{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+}
+
+header img{
+    height: 30px;
+}
+
+.image{
+    width: 100%;
+    background-image: url("assets/kw-background.png");
+    background-repeat: no-repeat;
+    height: 450px;
+    background-size: 100% 100%;
+}
+
+.image > div{
+    color: white;
+    padding-left: 80px;
+    padding-top: 50px;
+    font-size: 75px;
+}
+
+#hash{
+    font-weight: 900;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+h2{
+    padding-bottom: 20px;
+}
+
+.book{
+    padding: 120px 60px;
+}
+
+img[alt="book"]{
+    height: 280px;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.books div{
+    padding: 4px 0px;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.subname{
+    color: gray;
+    font-size: 12px;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.kart{
+    font-size: 15px;
+    background-color: #6196ff;
+    text-align: center;
+    height: 20px;
+    width: 50px;
+    border-radius: 2px;
+}
+
+.kart img{
+    height: 10px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+
+img[alt="toy"]{
+    height: 280px;
+}
+
+.name, .subname, .price{
+    padding-top: 10px;
+}
+
+img[alt="love"]{
+    height: 280px;
+}
+
+img[alt="pic"]{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+footer{
+    color: white;
+    background-color: black;
+}
+
+footer > div{
+    padding: 0px 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    text-align: right;
+}
+
+p{
+    padding: 10px;
+}
