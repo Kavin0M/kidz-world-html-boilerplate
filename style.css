@@ -10,6 +10,11 @@ body{
     height: 100%;
 }
 
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .content{
     padding: 50px;
     display: grid;
@@ -19,12 +24,10 @@ body{
 
 header{
     padding: 15px 40px;
-    display: flex;
     justify-content: space-between;
 }
 
 #cart{
-    display: flex;
     align-items: center;
     font-weight: 900;
     cursor: pointer;
@@ -39,7 +42,6 @@ header img{
 }
 
 .image{
-    width: 100%;
     background-image: url("assets/kw-background.png");
     background-repeat: no-repeat;
     height: 450px;
@@ -72,7 +74,6 @@ img[alt="book"]{
 }
 
 .list{
-    display: flex;
     justify-content: space-between;
 }
 
@@ -103,6 +104,7 @@ img[alt="book"]{
     width: 70px;
     border-radius: 2px;
     cursor: pointer;
+    color: white;
 }
 
 .kart:hover{
@@ -114,7 +116,6 @@ img[alt="book"]{
 }
 
 .price{
-    display: flex;
     justify-content: space-between;
 }
 
@@ -141,10 +142,9 @@ footer{
     background-color: black;
 }
 
-footer > div{
+.foot{
     padding: 0px 100px;
     align-items: center;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -154,4 +154,41 @@ footer > div{
 
 p{
     padding: 10px;
+}
+
+@media (max-width:500px){
+    .list{
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    .list>div{
+        padding: 10px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .foot, .head{
+        flex-direction: row;
+        padding: 0px;
+        font-size: 10px;
+    }
+    h2{
+        text-align: center;
+    }
+    .image{
+        width: 100%;
+        height: 23vh;
+    }
+    .image>div{
+        padding-left: 7vh;
+        padding-top: 3vh;
+    }
+    .image div{
+        font-size: 3vh;
+    }
+    #hash{
+        font-size: 1vh;
+        padding-top: 1vh;
+    }
 }
